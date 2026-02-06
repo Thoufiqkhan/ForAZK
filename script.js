@@ -62,20 +62,55 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
     
     // Set first question texts
-    document.getElementById('question1Text').textContent = config.questions.first.text;
-    document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
-    document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
-    document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
+    document.getElementById('question1Text').textContent = config.questions.one.text;
+    document.getElementById('yesBtn1').textContent = config.questions.one.yesBtn;
+    document.getElementById('noBtn1').textContent = config.questions.one.noBtn;
+    document.getElementById('secretAnswerBtn').textContent = config.questions.one.secretAnswer;
     
     // Set second question texts
-    document.getElementById('question2Text').textContent = config.questions.second.text;
-    document.getElementById('startText').textContent = config.questions.second.startText;
-    document.getElementById('nextBtn').textContent = config.questions.second.nextBtn;
-    
+    document.getElementById('question2Text').textContent = config.questions.two.text;
+    document.getElementById('startText').textContent = config.questions.two.startText;
+    document.getElementById('nextBtn').textContent = config.questions.two.nextBtn;
+
     // Set third question texts
-    document.getElementById('question3Text').textContent = config.questions.third.text;
-    document.getElementById('yesBtn3').textContent = config.questions.third.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.third.noBtn;
+    document.getElementById('question23Text').textContent = config.questions.three.text;
+    document.getElementById('startText').textContent = config.questions.three.startText;
+    document.getElementById('nextBtn').textContent = config.questions.three.nextBtn;
+
+    // Set fourth question texts
+    document.getElementById('question2Text').textContent = config.questions.four.text;
+    document.getElementById('startText').textContent = config.questions.four.startText;
+    document.getElementById('nextBtn').textContent = config.questions.four.nextBtn;
+
+    // Set fifth question texts
+    document.getElementById('question3Text').textContent = config.questions.five.text;
+    document.getElementById('yesBtn3').textContent = config.questions.five.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.five.noBtn;
+
+    // Set sixth question texts
+    document.getElementById('question3Text').textContent = config.questions.six.text;
+    document.getElementById('yesBtn3').textContent = config.questions.six.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.six.noBtn;
+
+    // Set seventh question texts
+    document.getElementById('question3Text').textContent = config.questions.seven.text;
+    document.getElementById('yesBtn3').textContent = config.questions.seven.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.seven.noBtn;
+
+    // Set eighth question texts
+    document.getElementById('question3Text').textContent = config.questions.eight.text;
+    document.getElementById('yesBtn3').textContent = config.questions.eight.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.eight.noBtn;
+
+    // Set nineth question texts
+    document.getElementById('question3Text').textContent = config.questions.nine.text;
+    document.getElementById('yesBtn3').textContent = config.questions.nine.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.nine.noBtn;
+    
+    // Set tenth question texts
+    document.getElementById('question3Text').textContent = config.questions.ten.text;
+    document.getElementById('yesBtn3').textContent = config.questions.ten.yesBtn;
+    document.getElementById('noBtn3').textContent = config.questions.ten.noBtn;
 
     // Create initial floating elements
     createFloatingElements();
