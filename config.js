@@ -5,7 +5,7 @@
 const CONFIG = {
     // Your Valentine's name that will appear in the title
     // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+    valentineName: "Aliya",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
@@ -21,18 +21,53 @@ const CONFIG = {
     // Questions and answers
     // Customize each question and its possible responses
     questions: {
-        first: {
+        one: {
             text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
+            yesBtn: "I think so...",                                             // Text for "Yes" button
+            noBtn: "Noooo",                                               // Text for "No" button
             secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
         },
-        second: {
+        two: {
             text: "How much do you love me?",                          // For the love meter
             startText: "This much!",                                   // Text before the percentage
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
-        third: {
+        three: {
+            text: "How much do you prefer mo over your cats?",                          // For the love meter
+            startText: "This much!",                                   // Text before the percentage
+            nextBtn: "Next ❤️"                                         // Text for the next button
+        },
+        four: {
+            text: "What is your tolerance for my sarcasm?",                          // For the love meter
+            startText: "This much!",                                   // Text before the percentage
+            nextBtn: "Next ❤️"                                         // Text for the next button
+        },
+        five: {
+            text: "Have you ever said “I’m fine” while absolutely not being fine? 🌹", // The big question!
+            yesBtn: "Yes!",                                             // Text for "Yes" button
+            noBtn: "No"                                                 // Text for "No" button
+        },
+        six: {
+            text: "Would you still love me if I was mildly annoying? 🌹", // The big question!
+            yesBtn: "Haa Haa",                                             // Text for "Yes" button
+            noBtn: "I would throw you out."                                                 // Text for "No" button
+        },
+        seven: {
+            text: "Do I make your bad days better? 🌹", // The big question!
+            yesBtn: "Yes and I absolutely love it!",                                             // Text for "Yes" button
+            noBtn: "You make it worse."                                                 // Text for "No" button
+        },
+        eight: {
+            text: "Do you tolerate me because you love me… or because you have no choice? 🌹", // The big question!
+            yesBtn: "I love you!",                                             // Text for "Yes" button
+            noBtn: "No choice."                                                 // Text for "No" button
+        },
+        nine: {
+            text: "Did you smile while answering these? 😊 🌹", // The big question!
+            yesBtn: "Yes!",                                             // Text for "Yes" button
+            noBtn: "No (with my ego)"                                                 // Text for "No" button
+        },
+        ten: {
             text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
             yesBtn: "Yes!",                                             // Text for "Yes" button
             noBtn: "No"                                                 // Text for "No" button
