@@ -69,48 +69,48 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // Set second question texts
     document.getElementById('question2Text').textContent = config.questions.two.text;
-    document.getElementById('startText').textContent = config.questions.two.startText;
-    document.getElementById('nextBtn').textContent = config.questions.two.nextBtn;
+    document.getElementById('startText2').textContent = config.questions.two.startText;
+    document.getElementById('nextBtn2').textContent = config.questions.two.nextBtn;
 
     // Set third question texts
-    document.getElementById('question23Text').textContent = config.questions.three.text;
-    document.getElementById('startText').textContent = config.questions.three.startText;
-    document.getElementById('nextBtn').textContent = config.questions.three.nextBtn;
+    document.getElementById('question3Text').textContent = config.questions.three.text;
+    document.getElementById('startText3').textContent = config.questions.three.startText;
+    document.getElementById('nextBtn3').textContent = config.questions.three.nextBtn;
 
     // Set fourth question texts
-    document.getElementById('question2Text').textContent = config.questions.four.text;
-    document.getElementById('startText').textContent = config.questions.four.startText;
-    document.getElementById('nextBtn').textContent = config.questions.four.nextBtn;
+    document.getElementById('question4Text').textContent = config.questions.four.text;
+    document.getElementById('startText4').textContent = config.questions.four.startText;
+    document.getElementById('nextBtn4').textContent = config.questions.four.nextBtn;
 
     // Set fifth question texts
-    document.getElementById('question3Text').textContent = config.questions.five.text;
-    document.getElementById('yesBtn3').textContent = config.questions.five.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.five.noBtn;
+    document.getElementById('question5Text').textContent = config.questions.five.text;
+    document.getElementById('yesBtn5').textContent = config.questions.five.yesBtn;
+    document.getElementById('noBtn5').textContent = config.questions.five.noBtn;
 
     // Set sixth question texts
-    document.getElementById('question3Text').textContent = config.questions.six.text;
-    document.getElementById('yesBtn3').textContent = config.questions.six.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.six.noBtn;
+    document.getElementById('question6Text').textContent = config.questions.six.text;
+    document.getElementById('yesBtn6').textContent = config.questions.six.yesBtn;
+    document.getElementById('noBtn6').textContent = config.questions.six.noBtn;
 
     // Set seventh question texts
-    document.getElementById('question3Text').textContent = config.questions.seven.text;
-    document.getElementById('yesBtn3').textContent = config.questions.seven.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.seven.noBtn;
+    document.getElementById('question7Text').textContent = config.questions.seven.text;
+    document.getElementById('yesBtn7').textContent = config.questions.seven.yesBtn;
+    document.getElementById('noBtn7').textContent = config.questions.seven.noBtn;
 
     // Set eighth question texts
-    document.getElementById('question3Text').textContent = config.questions.eight.text;
-    document.getElementById('yesBtn3').textContent = config.questions.eight.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.eight.noBtn;
+    document.getElementById('question8Text').textContent = config.questions.eight.text;
+    document.getElementById('yesBtn8').textContent = config.questions.eight.yesBtn;
+    document.getElementById('noBtn8').textContent = config.questions.eight.noBtn;
 
     // Set nineth question texts
-    document.getElementById('question3Text').textContent = config.questions.nine.text;
-    document.getElementById('yesBtn3').textContent = config.questions.nine.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.nine.noBtn;
+    document.getElementById('question9Text').textContent = config.questions.nine.text;
+    document.getElementById('yesBtn9').textContent = config.questions.nine.yesBtn;
+    document.getElementById('noBtn9').textContent = config.questions.nine.noBtn;
     
     // Set tenth question texts
-    document.getElementById('question3Text').textContent = config.questions.ten.text;
-    document.getElementById('yesBtn3').textContent = config.questions.ten.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.ten.noBtn;
+    document.getElementById('question10Text').textContent = config.questions.ten.text;
+    document.getElementById('yesBtn10').textContent = config.questions.ten.yesBtn;
+    document.getElementById('noBtn10').textContent = config.questions.ten.noBtn;
 
     // Create initial floating elements
     createFloatingElements();
