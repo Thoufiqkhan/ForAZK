@@ -79,14 +79,14 @@ const CONFIG = {
     loveMessages: {
         extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
         high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
+        normal: "Sooo sad.😔"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        message: "Now come get your gift: one big warm hug, unlimited kisses, and a suspiciously large bundle of roses 🌹😌",
+        emojis: "🎁💖🤗💝🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹💋😌❤️💕"  // These will bounce around
     },
 
     // Color scheme for the website
