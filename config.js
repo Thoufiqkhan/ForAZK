@@ -3,127 +3,142 @@
 // ============================================
 
 const CONFIG = {
-    // Your Valentine's name that will appear in the title
-    // Example: "Jade", "Sarah", "Mike"
     valentineName: "Aliya",
-
-    // The title that appears in the browser tab
-    // You can use emojis! 💝 💖 💗 💓 💞 💕
     pageTitle: "Will You Be My Valentine? 💝",
 
-    // Floating emojis that appear in the background
-    // Find more emojis at: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+        hearts: ['❤️', '💖', '💝', '💗', '💓'],
+        bears: ['🧸', '🐻']
     },
 
-    // Questions and answers
-    // Customize each question and its possible responses
-    questions: {
-        first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
+    // ⚠️ IMPORTANT: I have converted this into an ARRAY [...] 
+    // so you can have infinite questions.
+    questions: [
+        // --- QUESTION 1 (Yes/No) ---
+        {
+            id: "q1",
+            type: "simple", // Standard Yes/No
+            text: "Do you like me?",
+            yesBtn: "Yes",
+            noBtn: "No",
+            secretAnswer: "I don't like you, I love you! ❤️"
         },
-        second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+        // --- QUESTION 2 (Yes/No) ---
+        {
+            id: "q2",
+            type: "simple", 
+            text: "Are you excited for Valentine's Day?",
+            yesBtn: "Yes!",
+            noBtn: "No",
+            secretAnswer: "You better be! 😉"
         },
-        third: {
-            text: "How much do you like my sarcasm?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+        // --- QUESTION 3 (Love Meter) ---
+        {
+            id: "q3",
+            type: "meter", // Slider logic
+            text: "How much do you love me?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
         },
-        fourth: {
-            text: "How much do you like me more than your cats?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+        // --- QUESTION 4 (Love Meter) ---
+        {
+            id: "q4",
+            type: "meter",
+            text: "How much do you like my sarcasm?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
         },
-        fifth: {
-            text: "How much do you like my sarcasm?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+        // --- QUESTION 5 (Love Meter) ---
+        {
+            id: "q5",
+            type: "meter",
+            text: "How much do you like me more than your cats?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
         },
-        sixth: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- QUESTION 6 (Yes/No) ---
+        {
+            id: "q6",
+            type: "simple",
+            text: "Will you be my Valentine on February 14th, 2025? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         },
-        seventh: {
-            text: "Have you ever said “I’m fine” while absolutely not being fine? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- QUESTION 7 (Yes/No) ---
+        {
+            id: "q7",
+            type: "simple",
+            text: "Have you ever said “I’m fine” while absolutely not being fine? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         },
-        eighth: {
-            text: "Do you tolerate my flaws because you love me… or because you’re stuck? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- QUESTION 8 (Yes/No) ---
+        {
+            id: "q8",
+            type: "simple",
+            text: "Do you tolerate my flaws because you love me… or because you’re stuck? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         },
-        nineth: {
-            text: "Would you still love me if I was mildly annoying? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- QUESTION 9 (Yes/No) ---
+        {
+            id: "q9",
+            type: "simple",
+            text: "Would you still love me if I was mildly annoying? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         },
-        ten: {
-            text: "Do I make your bad days better? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- QUESTION 10 (Yes/No) ---
+        {
+            id: "q10",
+            type: "simple",
+            text: "Do I make your bad days better? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         },
-        infy: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+        // --- FINAL QUESTION (Triggers Celebration) ---
+        {
+            id: "final",
+            type: "final", // The big question that runs away
+            text: "Will you be my Valentine on February 14th, 2025? 🌹",
+            yesBtn: "Yes!",
+            noBtn: "No"
         }
-    },
+    ],
 
-    // Love meter messages
-    // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "Ohh sad! ☹️"                           // Shows when they go past 100%
+        extreme: "WOOOOW You love me that much?? 🥰🚀💝",
+        high: "To infinity and beyond! 🚀💝",
+        normal: "Ohh sad! ☹️"
     },
 
-    // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
         message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        emojis: "🎁💖🤗💝💋❤️💕"
     },
 
-    // Color scheme for the website
-    // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
     colors: {
-        backgroundStart: "#ffafbd",      // Gradient start (try pastel colors for a soft look)
-        backgroundEnd: "#ffc3a0",        // Gradient end (should complement backgroundStart)
-        buttonBackground: "#ff6b6b",     // Button color (should stand out against the background)
-        buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
-        textColor: "#ff4757"             // Text color (make sure it's readable!)
+        backgroundStart: "#ffafbd",
+        backgroundEnd: "#ffc3a0",
+        buttonBackground: "#ff6b6b",
+        buttonHover: "#ff8787",
+        textColor: "#ff4757"
     },
 
-    // Animation settings
-    // Adjust these if you want faster/slower animations
     animations: {
-        floatDuration: "15s",           // How long it takes hearts to float up (10-20s recommended)
-        floatDistance: "50px",          // How far hearts move sideways (30-70px recommended)
-        bounceSpeed: "0.5s",            // Speed of bouncing animations (0.3-0.7s recommended)
-        heartExplosionSize: 1.5         // Size of heart explosion effect (1.2-2.0 recommended)
+        floatDuration: "15s",
+        floatDistance: "50px",
+        bounceSpeed: "0.5s",
+        heartExplosionSize: 1.5
     },
 
-    // Background Music (Optional)
-    // Add your own music URL after getting proper licenses
     music: {
-        enabled: true,                     // Music feature is enabled
-        autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3", // Music streaming URL
-        startText: "🎵 Play Music",        // Button text to start music
-        stopText: "🔇 Stop Music",         // Button text to stop music
-        volume: 0.5                        // Volume level (0.0 to 1.0)
+        enabled: true,
+        autoplay: true,
+        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3",
+        startText: "🎵 Play Music",
+        stopText: "🔇 Stop Music",
+        volume: 0.5
     }
 };
-
-// Don't modify anything below this line unless you know what you're doing
-window.VALENTINE_CONFIG = CONFIG; 
