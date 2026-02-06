@@ -33,7 +33,7 @@ const CONFIG = {
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
         three: {
-            text: "How much do you prefer mo over your cats?",                          // For the love meter
+            text: "How much do you prefer me over your cats?",                          // For the love meter
             startText: "This much!",                                   // Text before the percentage
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
@@ -68,7 +68,7 @@ const CONFIG = {
             noBtn: "No (with my ego)"                                                 // Text for "No" button
         },
         ten: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
+            text: "Will you be my Valentine on February 14th, 2026? 🌹", // The big question!
             yesBtn: "Yes!",                                             // Text for "Yes" button
             noBtn: "No"                                                 // Text for "No" button
         }
